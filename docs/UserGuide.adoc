@@ -40,6 +40,8 @@ What's different from AddressBook-Level1:
 
 == Viewing help : `help`
 
+Returns a list of all accepted commands to the UI, including examples of usage and accepted parameters for certain
+commands. +
 Format: `help`
 
 [TIP]
