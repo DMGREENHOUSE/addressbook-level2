@@ -11,6 +11,12 @@ public class HelpCommand extends Command {
     public static final String MESSAGE_USAGE = COMMAND_WORD + ": Shows program usage instructions.\n"
             + "Example: " + COMMAND_WORD;
 
+    public String addIndentation(String str) {
+        str = str.replaceAll("Parameters:", "    Parameters:");
+        str = str.replaceAll("Example:", "        Example:");
+        return str;
+    }
+
     @Override
     public CommandResult execute() {
         return new CommandResult(
