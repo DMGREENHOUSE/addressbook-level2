@@ -20,15 +20,15 @@ public class HelpCommand extends Command {
     @Override
     public CommandResult execute() {
         return new CommandResult(
-                AddCommand.MESSAGE_USAGE
-                + "\n" + DeleteCommand.MESSAGE_USAGE
-                + "\n" + ClearCommand.MESSAGE_USAGE
-                + "\n" + FindCommand.MESSAGE_USAGE
-                + "\n" + ListCommand.MESSAGE_USAGE
-                + "\n" + ViewCommand.MESSAGE_USAGE
-                + "\n" + ViewAllCommand.MESSAGE_USAGE
-                + "\n" + HelpCommand.MESSAGE_USAGE
-                + "\n" + ExitCommand.MESSAGE_USAGE
+                addIndentation(AddCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(DeleteCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(ClearCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(FindCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(ListCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(ViewCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(ViewAllCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(HelpCommand.MESSAGE_USAGE)
+                + "\n" + addIndentation(ExitCommand.MESSAGE_USAGE)
         );
     }
 }
